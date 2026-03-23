@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumin | AI Video Clipper</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-sparkles"></i>
+                ClipAI
+            </div>
+            <div class="header-actions">
+                <span class="label-sm">Powered by Groq Cloud</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Turn Long Videos into <span>Viral Shorts</span></h1>
+                <p class="subtitle">Our AI finds the most engaging moments, scores them, and generates ready-to-post clips in seconds.</p>
+
+                <div class="input-section">
+                    <form id="url-form" class="url-input-container">
+                        <input type="text" id="youtube-url" placeholder="Paste YouTube Video URL..." required>
+                        <button type="submit" class="btn-generate">Generate Clips</button>
+                    </form>
+
+                    <div id="drop-zone" class="upload-area">
+                        <i class="fas fa-plus-circle"></i>
+                        <p><strong>Drag & drop your video here</strong></p>
+                        <p class="label-sm">or click to browse files (Max 100MB)</p>
+                        <input type="file" id="file-input" class="hidden" accept="video/*">
+                    </div>
+                    
+                    <div id="error-message" class="hidden"></div>
+                </div>
+            </section>
+
+            <section id="processing" class="processing-section">
+                <div class="stage-container">
+                    <div id="stage-download" class="stage">
+                        <i class="fas fa-download"></i>
+                        <div>
+                            <p class="label-sm">Stage 1</p>
+                            <p><strong>Downloading</strong></p>
+                        </div>
+                    </div>
+                    <div id="stage-transcribe" class="stage">
+                        <i class="fas fa-waveform-lines"></i>
+                        <div>
+                            <p class="label-sm">Stage 2</p>
+                            <p><strong>Transcribing</strong></p>
+                        </div>
+                    </div>
+                    <div id="stage-score" class="stage">
+                        <i class="fas fa-brain"></i>
+                        <div>
+                            <p class="label-sm">Stage 3</p>
+                            <p><strong>AI Scoring</strong></p>
+                        </div>
+                    </div>
+                    <div id="stage-clip" class="stage">
+                        <i class="fas fa-film"></i>
+                        <div>
+                            <p class="label-sm">Stage 4</p>
+                            <p><strong>Clipping</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="results" class="results-section hidden">
+                <div class="results-header">
+                    <h2>Generated Highlights</h2>
+                    <p class="label-sm" id="clip-count">0 Clips Found</p>
+                </div>
+                
+                <div id="clips-grid" class="clips-grid">
+                    <!-- Clips will be injected here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Template for a single clip card -->
+    <template id="clip-template">
+        <div class="clip-card">
+            <div class="video-player">
+                <video controls poster=""></video>
+            </div>
+            <div class="clip-info">
+                <h3 class="clip-title">The Perfect Moment</h3>
+                <p class="clip-reasoning">This clip contains a high-energy hook and a clear takeaway.</p>
+                
+                <div class="scores">
+                    <div class="score-item" data-type="virality">
+                        <div class="score-label">
+                            <span>Virality Score</span>
+                            <span class="score-value">0</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="score-item" data-type="hook">
+                        <div class="score-label">
+                            <span>Hook Potentcy</span>
+                            <span class="score-value">0</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="score-item" data-type="engagement">
+                        <div class="score-label">
+                            <span>Engagement</span>
+                            <span class="score-value">0</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-download" download>
+                    <i class="fas fa-download"></i> Download Clip
+                </a>
+            </div>
+        </div>
+    </template>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
