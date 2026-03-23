@@ -1,0 +1,1721 @@
+{
+  "status": "success",
+  "channel_metrics": {
+    "total_views": null,
+    "subscribers": null,
+    "growth_features": {
+      "avg_engagement_rate_30d": 0.6138206627680312,
+      "weekly_growth_rate_pct": 0.0
+    }
+  },
+  "content_metrics": {
+    "video_count": null,
+    "niche_trend": {
+      "error": "'interest'"
+    },
+    "ytdlp_scraped_data": {}
+  },
+  "audience_metrics": {
+    "avg_engagement": 0.6138206627680312
+  },
+  "intelligence_insights": {
+    "performance_drivers": {
+      "error": "Not enough data for ML performance inference"
+    },
+    "content_insights": {
+      "best_duration": "8-12 min",
+      "weak_area": "thumbnails CTR",
+      "format_recommendation": "Long-form tutorials"
+    }
+  },
+  "opportunities": [
+    {
+      "topic_opportunity": "AI automation tools",
+      "demand": "High",
+      "competition": "Medium",
+      "your_coverage": "Low",
+      "similarity_score": 0.0,
+      "recommendation": "Create 5 videos exploring this trending gap."
+    },
+    {
+      "topic_opportunity": "How to build AI Agents",
+      "demand": "High",
+      "competition": "Medium",
+      "your_coverage": "Low",
+      "similarity_score": 0.0,
+      "recommendation": "Create 5 videos exploring this trending gap."
+    }
+  ],
+  "ai_strategy": {
+    "weekly_strategy": {
+      "Saturday": {
+        "format": "Trend video",
+        "topic": "The ultimate guide to AI automation tools",
+        "priority": "High"
+      },
+      "Monday": {
+        "format": "Short video",
+        "topic": "3 secrets about How to build AI Agents you didn't know",
+        "priority": "Medium"
+      },
+      "Wednesday": {
+        "format": "Long tutorial",
+        "topic": "Deep dive into your core channel niche",
+        "priority": "Medium"
+      }
+    },
+    "promotion_strategy": {
+      "Twitter": "Extract 3 main hooks from your upcoming tutorial and post them as a thread 2 hours before the video goes live to build momentum.",
+      "Reddit": "Turn your trending topic script into a non-promotional, high-value discussion post on a related subreddit.",
+      "Shorts": "Repurpose the intro of your highest priority video into a 15-second TikTok/Reel."
+    },
+    "agentic_rationale": "This strategy heavily prioritizes identified market gaps while anchoring the highest-effort 'Trend video' to your most historically performant posting day."
+  },
+  "predictions": {
+    "views_forecast": {
+      "current_value": 1000.0,
+      "predicted_value": 4000.0,
+      "growth_pct": 300.0,
+      "periods": 60,
+      "models_used": [
+        "regression"
+      ],
+      "forecast": [
+        {
+          "ds": "2026-03-31",
+          "yhat": 1050.0,
+          "yhat_lower": 1009.18,
+          "yhat_upper": 1090.82
+        },
+        {
+          "ds": "2026-04-01",
+          "yhat": 1100.0,
+          "yhat_lower": 1059.18,
+          "yhat_upper": 1140.82
+        },
+        {
+          "ds": "2026-04-02",
+          "yhat": 1150.0,
+          "yhat_lower": 1109.18,
+          "yhat_upper": 1190.82
+        },
+        {
+          "ds": "2026-04-03",
+          "yhat": 1200.0,
+          "yhat_lower": 1159.18,
+          "yhat_upper": 1240.82
+        },
+        {
+          "ds": "2026-04-04",
+          "yhat": 1250.0,
+          "yhat_lower": 1209.18,
+          "yhat_upper": 1290.82
+        },
+        {
+          "ds": "2026-04-05",
+          "yhat": 1300.0,
+          "yhat_lower": 1259.18,
+          "yhat_upper": 1340.82
+        },
+        {
+          "ds": "2026-04-06",
+          "yhat": 1350.0,
+          "yhat_lower": 1309.18,
+          "yhat_upper": 1390.82
+        },
+        {
+          "ds": "2026-04-07",
+          "yhat": 1400.0,
+          "yhat_lower": 1359.18,
+          "yhat_upper": 1440.82
+        },
+        {
+          "ds": "2026-04-08",
+          "yhat": 1450.0,
+          "yhat_lower": 1409.18,
+          "yhat_upper": 1490.82
+        },
+        {
+          "ds": "2026-04-09",
+          "yhat": 1500.0,
+          "yhat_lower": 1459.18,
+          "yhat_upper": 1540.82
+        },
+        {
+          "ds": "2026-04-10",
+          "yhat": 1550.0,
+          "yhat_lower": 1509.18,
+          "yhat_upper": 1590.82
+        },
+        {
+          "ds": "2026-04-11",
+          "yhat": 1600.0,
+          "yhat_lower": 1559.18,
+          "yhat_upper": 1640.82
+        },
+        {
+          "ds": "2026-04-12",
+          "yhat": 1650.0,
+          "yhat_lower": 1609.18,
+          "yhat_upper": 1690.82
+        },
+        {
+          "ds": "2026-04-13",
+          "yhat": 1700.0,
+          "yhat_lower": 1659.18,
+          "yhat_upper": 1740.82
+        },
+        {
+          "ds": "2026-04-14",
+          "yhat": 1750.0,
+          "yhat_lower": 1709.18,
+          "yhat_upper": 1790.82
+        },
+        {
+          "ds": "2026-04-15",
+          "yhat": 1800.0,
+          "yhat_lower": 1759.18,
+          "yhat_upper": 1840.82
+        },
+        {
+          "ds": "2026-04-16",
+          "yhat": 1850.0,
+          "yhat_lower": 1809.18,
+          "yhat_upper": 1890.82
+        },
+        {
+          "ds": "2026-04-17",
+          "yhat": 1900.0,
+          "yhat_lower": 1859.18,
+          "yhat_upper": 1940.82
+        },
+        {
+          "ds": "2026-04-18",
+          "yhat": 1950.0,
+          "yhat_lower": 1909.18,
+          "yhat_upper": 1990.82
+        },
+        {
+          "ds": "2026-04-19",
+          "yhat": 2000.0,
+          "yhat_lower": 1959.18,
+          "yhat_upper": 2040.82
+        },
+        {
+          "ds": "2026-04-20",
+          "yhat": 2050.0,
+          "yhat_lower": 2009.18,
+          "yhat_upper": 2090.82
+        },
+        {
+          "ds": "2026-04-21",
+          "yhat": 2100.0,
+          "yhat_lower": 2059.18,
+          "yhat_upper": 2140.82
+        },
+        {
+          "ds": "2026-04-22",
+          "yhat": 2150.0,
+          "yhat_lower": 2109.18,
+          "yhat_upper": 2190.82
+        },
+        {
+          "ds": "2026-04-23",
+          "yhat": 2200.0,
+          "yhat_lower": 2159.18,
+          "yhat_upper": 2240.82
+        },
+        {
+          "ds": "2026-04-24",
+          "yhat": 2250.0,
+          "yhat_lower": 2209.18,
+          "yhat_upper": 2290.82
+        },
+        {
+          "ds": "2026-04-25",
+          "yhat": 2300.0,
+          "yhat_lower": 2259.18,
+          "yhat_upper": 2340.82
+        },
+        {
+          "ds": "2026-04-26",
+          "yhat": 2350.0,
+          "yhat_lower": 2309.18,
+          "yhat_upper": 2390.82
+        },
+        {
+          "ds": "2026-04-27",
+          "yhat": 2400.0,
+          "yhat_lower": 2359.18,
+          "yhat_upper": 2440.82
+        },
+        {
+          "ds": "2026-04-28",
+          "yhat": 2450.0,
+          "yhat_lower": 2409.18,
+          "yhat_upper": 2490.82
+        },
+        {
+          "ds": "2026-04-29",
+          "yhat": 2500.0,
+          "yhat_lower": 2459.18,
+          "yhat_upper": 2540.82
+        },
+        {
+          "ds": "2026-04-30",
+          "yhat": 2550.0,
+          "yhat_lower": 2509.18,
+          "yhat_upper": 2590.82
+        },
+        {
+          "ds": "2026-05-01",
+          "yhat": 2600.0,
+          "yhat_lower": 2559.18,
+          "yhat_upper": 2640.82
+        },
+        {
+          "ds": "2026-05-02",
+          "yhat": 2650.0,
+          "yhat_lower": 2609.18,
+          "yhat_upper": 2690.82
+        },
+        {
+          "ds": "2026-05-03",
+          "yhat": 2700.0,
+          "yhat_lower": 2659.18,
+          "yhat_upper": 2740.82
+        },
+        {
+          "ds": "2026-05-04",
+          "yhat": 2750.0,
+          "yhat_lower": 2709.18,
+          "yhat_upper": 2790.82
+        },
+        {
+          "ds": "2026-05-05",
+          "yhat": 2800.0,
+          "yhat_lower": 2759.18,
+          "yhat_upper": 2840.82
+        },
+        {
+          "ds": "2026-05-06",
+          "yhat": 2850.0,
+          "yhat_lower": 2809.18,
+          "yhat_upper": 2890.82
+        },
+        {
+          "ds": "2026-05-07",
+          "yhat": 2900.0,
+          "yhat_lower": 2859.18,
+          "yhat_upper": 2940.82
+        },
+        {
+          "ds": "2026-05-08",
+          "yhat": 2950.0,
+          "yhat_lower": 2909.18,
+          "yhat_upper": 2990.82
+        },
+        {
+          "ds": "2026-05-09",
+          "yhat": 3000.0,
+          "yhat_lower": 2959.18,
+          "yhat_upper": 3040.82
+        },
+        {
+          "ds": "2026-05-10",
+          "yhat": 3050.0,
+          "yhat_lower": 3009.18,
+          "yhat_upper": 3090.82
+        },
+        {
+          "ds": "2026-05-11",
+          "yhat": 3100.0,
+          "yhat_lower": 3059.18,
+          "yhat_upper": 3140.82
+        },
+        {
+          "ds": "2026-05-12",
+          "yhat": 3150.0,
+          "yhat_lower": 3109.18,
+          "yhat_upper": 3190.82
+        },
+        {
+          "ds": "2026-05-13",
+          "yhat": 3200.0,
+          "yhat_lower": 3159.18,
+          "yhat_upper": 3240.82
+        },
+        {
+          "ds": "2026-05-14",
+          "yhat": 3250.0,
+          "yhat_lower": 3209.18,
+          "yhat_upper": 3290.82
+        },
+        {
+          "ds": "2026-05-15",
+          "yhat": 3300.0,
+          "yhat_lower": 3259.18,
+          "yhat_upper": 3340.82
+        },
+        {
+          "ds": "2026-05-16",
+          "yhat": 3350.0,
+          "yhat_lower": 3309.18,
+          "yhat_upper": 3390.82
+        },
+        {
+          "ds": "2026-05-17",
+          "yhat": 3400.0,
+          "yhat_lower": 3359.18,
+          "yhat_upper": 3440.82
+        },
+        {
+          "ds": "2026-05-18",
+          "yhat": 3450.0,
+          "yhat_lower": 3409.18,
+          "yhat_upper": 3490.82
+        },
+        {
+          "ds": "2026-05-19",
+          "yhat": 3500.0,
+          "yhat_lower": 3459.18,
+          "yhat_upper": 3540.82
+        },
+        {
+          "ds": "2026-05-20",
+          "yhat": 3550.0,
+          "yhat_lower": 3509.18,
+          "yhat_upper": 3590.82
+        },
+        {
+          "ds": "2026-05-21",
+          "yhat": 3600.0,
+          "yhat_lower": 3559.18,
+          "yhat_upper": 3640.82
+        },
+        {
+          "ds": "2026-05-22",
+          "yhat": 3650.0,
+          "yhat_lower": 3609.18,
+          "yhat_upper": 3690.82
+        },
+        {
+          "ds": "2026-05-23",
+          "yhat": 3700.0,
+          "yhat_lower": 3659.18,
+          "yhat_upper": 3740.82
+        },
+        {
+          "ds": "2026-05-24",
+          "yhat": 3750.0,
+          "yhat_lower": 3709.18,
+          "yhat_upper": 3790.82
+        },
+        {
+          "ds": "2026-05-25",
+          "yhat": 3800.0,
+          "yhat_lower": 3759.18,
+          "yhat_upper": 3840.82
+        },
+        {
+          "ds": "2026-05-26",
+          "yhat": 3850.0,
+          "yhat_lower": 3809.18,
+          "yhat_upper": 3890.82
+        },
+        {
+          "ds": "2026-05-27",
+          "yhat": 3900.0,
+          "yhat_lower": 3859.18,
+          "yhat_upper": 3940.82
+        },
+        {
+          "ds": "2026-05-28",
+          "yhat": 3950.0,
+          "yhat_lower": 3909.18,
+          "yhat_upper": 3990.82
+        },
+        {
+          "ds": "2026-05-29",
+          "yhat": 4000.0,
+          "yhat_lower": 3959.18,
+          "yhat_upper": 4040.82
+        }
+      ]
+    },
+    "subscriber_forecast": {
+      "current_value": 10000.0,
+      "predicted_value": 10000.0,
+      "growth_pct": 0.0,
+      "periods": 60,
+      "models_used": [
+        "regression"
+      ],
+      "forecast": [
+        {
+          "ds": "2026-03-31",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-01",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-02",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-03",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-04",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-05",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-06",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-07",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-08",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-09",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-10",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-11",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-12",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-13",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-14",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-15",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-16",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-17",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-18",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-19",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-20",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-21",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-22",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-23",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-24",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-25",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-26",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-27",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-28",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-29",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-04-30",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-01",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-02",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-03",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-04",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-05",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-06",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-07",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-08",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-09",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-10",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-11",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-12",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-13",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-14",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-15",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-16",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-17",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-18",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-19",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-20",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-21",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-22",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-23",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-24",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-25",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-26",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-27",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-28",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        },
+        {
+          "ds": "2026-05-29",
+          "yhat": 10000.0,
+          "yhat_lower": 10000.0,
+          "yhat_upper": 10000.0
+        }
+      ],
+      "metric": "subscribers",
+      "next_milestone": 25000,
+      "days_to_milestone": null,
+      "milestone_reachable": false,
+      "summary": "Current: 10.0k subscribers. Predicted: 10.0k in 60 days (+0.0%). 25.0k milestone not reached within 60-day window."
+    },
+    "engagement_forecast": {
+      "current_value": 0.69,
+      "predicted_value": 4.04,
+      "growth_pct": 334.66,
+      "periods": 60,
+      "models_used": [
+        "regression"
+      ],
+      "forecast": [
+        {
+          "ds": "2026-03-31",
+          "yhat": 0.73,
+          "yhat_lower": 0.67,
+          "yhat_upper": 0.78
+        },
+        {
+          "ds": "2026-04-01",
+          "yhat": 0.78,
+          "yhat_lower": 0.73,
+          "yhat_upper": 0.84
+        },
+        {
+          "ds": "2026-04-02",
+          "yhat": 0.84,
+          "yhat_lower": 0.78,
+          "yhat_upper": 0.89
+        },
+        {
+          "ds": "2026-04-03",
+          "yhat": 0.89,
+          "yhat_lower": 0.84,
+          "yhat_upper": 0.95
+        },
+        {
+          "ds": "2026-04-04",
+          "yhat": 0.95,
+          "yhat_lower": 0.9,
+          "yhat_upper": 1.0
+        },
+        {
+          "ds": "2026-04-05",
+          "yhat": 1.01,
+          "yhat_lower": 0.95,
+          "yhat_upper": 1.06
+        },
+        {
+          "ds": "2026-04-06",
+          "yhat": 1.06,
+          "yhat_lower": 1.01,
+          "yhat_upper": 1.12
+        },
+        {
+          "ds": "2026-04-07",
+          "yhat": 1.12,
+          "yhat_lower": 1.06,
+          "yhat_upper": 1.17
+        },
+        {
+          "ds": "2026-04-08",
+          "yhat": 1.17,
+          "yhat_lower": 1.12,
+          "yhat_upper": 1.23
+        },
+        {
+          "ds": "2026-04-09",
+          "yhat": 1.23,
+          "yhat_lower": 1.18,
+          "yhat_upper": 1.28
+        },
+        {
+          "ds": "2026-04-10",
+          "yhat": 1.29,
+          "yhat_lower": 1.23,
+          "yhat_upper": 1.34
+        },
+        {
+          "ds": "2026-04-11",
+          "yhat": 1.34,
+          "yhat_lower": 1.29,
+          "yhat_upper": 1.4
+        },
+        {
+          "ds": "2026-04-12",
+          "yhat": 1.4,
+          "yhat_lower": 1.35,
+          "yhat_upper": 1.45
+        },
+        {
+          "ds": "2026-04-13",
+          "yhat": 1.46,
+          "yhat_lower": 1.4,
+          "yhat_upper": 1.51
+        },
+        {
+          "ds": "2026-04-14",
+          "yhat": 1.51,
+          "yhat_lower": 1.46,
+          "yhat_upper": 1.57
+        },
+        {
+          "ds": "2026-04-15",
+          "yhat": 1.57,
+          "yhat_lower": 1.51,
+          "yhat_upper": 1.62
+        },
+        {
+          "ds": "2026-04-16",
+          "yhat": 1.62,
+          "yhat_lower": 1.57,
+          "yhat_upper": 1.68
+        },
+        {
+          "ds": "2026-04-17",
+          "yhat": 1.68,
+          "yhat_lower": 1.63,
+          "yhat_upper": 1.73
+        },
+        {
+          "ds": "2026-04-18",
+          "yhat": 1.74,
+          "yhat_lower": 1.68,
+          "yhat_upper": 1.79
+        },
+        {
+          "ds": "2026-04-19",
+          "yhat": 1.79,
+          "yhat_lower": 1.74,
+          "yhat_upper": 1.85
+        },
+        {
+          "ds": "2026-04-20",
+          "yhat": 1.85,
+          "yhat_lower": 1.79,
+          "yhat_upper": 1.9
+        },
+        {
+          "ds": "2026-04-21",
+          "yhat": 1.9,
+          "yhat_lower": 1.85,
+          "yhat_upper": 1.96
+        },
+        {
+          "ds": "2026-04-22",
+          "yhat": 1.96,
+          "yhat_lower": 1.91,
+          "yhat_upper": 2.01
+        },
+        {
+          "ds": "2026-04-23",
+          "yhat": 2.02,
+          "yhat_lower": 1.96,
+          "yhat_upper": 2.07
+        },
+        {
+          "ds": "2026-04-24",
+          "yhat": 2.07,
+          "yhat_lower": 2.02,
+          "yhat_upper": 2.13
+        },
+        {
+          "ds": "2026-04-25",
+          "yhat": 2.13,
+          "yhat_lower": 2.07,
+          "yhat_upper": 2.18
+        },
+        {
+          "ds": "2026-04-26",
+          "yhat": 2.18,
+          "yhat_lower": 2.13,
+          "yhat_upper": 2.24
+        },
+        {
+          "ds": "2026-04-27",
+          "yhat": 2.24,
+          "yhat_lower": 2.19,
+          "yhat_upper": 2.29
+        },
+        {
+          "ds": "2026-04-28",
+          "yhat": 2.3,
+          "yhat_lower": 2.24,
+          "yhat_upper": 2.35
+        },
+        {
+          "ds": "2026-04-29",
+          "yhat": 2.35,
+          "yhat_lower": 2.3,
+          "yhat_upper": 2.41
+        },
+        {
+          "ds": "2026-04-30",
+          "yhat": 2.41,
+          "yhat_lower": 2.36,
+          "yhat_upper": 2.46
+        },
+        {
+          "ds": "2026-05-01",
+          "yhat": 2.47,
+          "yhat_lower": 2.41,
+          "yhat_upper": 2.52
+        },
+        {
+          "ds": "2026-05-02",
+          "yhat": 2.52,
+          "yhat_lower": 2.47,
+          "yhat_upper": 2.58
+        },
+        {
+          "ds": "2026-05-03",
+          "yhat": 2.58,
+          "yhat_lower": 2.52,
+          "yhat_upper": 2.63
+        },
+        {
+          "ds": "2026-05-04",
+          "yhat": 2.63,
+          "yhat_lower": 2.58,
+          "yhat_upper": 2.69
+        },
+        {
+          "ds": "2026-05-05",
+          "yhat": 2.69,
+          "yhat_lower": 2.64,
+          "yhat_upper": 2.74
+        },
+        {
+          "ds": "2026-05-06",
+          "yhat": 2.75,
+          "yhat_lower": 2.69,
+          "yhat_upper": 2.8
+        },
+        {
+          "ds": "2026-05-07",
+          "yhat": 2.8,
+          "yhat_lower": 2.75,
+          "yhat_upper": 2.86
+        },
+        {
+          "ds": "2026-05-08",
+          "yhat": 2.86,
+          "yhat_lower": 2.8,
+          "yhat_upper": 2.91
+        },
+        {
+          "ds": "2026-05-09",
+          "yhat": 2.91,
+          "yhat_lower": 2.86,
+          "yhat_upper": 2.97
+        },
+        {
+          "ds": "2026-05-10",
+          "yhat": 2.97,
+          "yhat_lower": 2.92,
+          "yhat_upper": 3.02
+        },
+        {
+          "ds": "2026-05-11",
+          "yhat": 3.03,
+          "yhat_lower": 2.97,
+          "yhat_upper": 3.08
+        },
+        {
+          "ds": "2026-05-12",
+          "yhat": 3.08,
+          "yhat_lower": 3.03,
+          "yhat_upper": 3.14
+        },
+        {
+          "ds": "2026-05-13",
+          "yhat": 3.14,
+          "yhat_lower": 3.08,
+          "yhat_upper": 3.19
+        },
+        {
+          "ds": "2026-05-14",
+          "yhat": 3.19,
+          "yhat_lower": 3.14,
+          "yhat_upper": 3.25
+        },
+        {
+          "ds": "2026-05-15",
+          "yhat": 3.25,
+          "yhat_lower": 3.2,
+          "yhat_upper": 3.3
+        },
+        {
+          "ds": "2026-05-16",
+          "yhat": 3.31,
+          "yhat_lower": 3.25,
+          "yhat_upper": 3.36
+        },
+        {
+          "ds": "2026-05-17",
+          "yhat": 3.36,
+          "yhat_lower": 3.31,
+          "yhat_upper": 3.42
+        },
+        {
+          "ds": "2026-05-18",
+          "yhat": 3.42,
+          "yhat_lower": 3.37,
+          "yhat_upper": 3.47
+        },
+        {
+          "ds": "2026-05-19",
+          "yhat": 3.48,
+          "yhat_lower": 3.42,
+          "yhat_upper": 3.53
+        },
+        {
+          "ds": "2026-05-20",
+          "yhat": 3.53,
+          "yhat_lower": 3.48,
+          "yhat_upper": 3.59
+        },
+        {
+          "ds": "2026-05-21",
+          "yhat": 3.59,
+          "yhat_lower": 3.53,
+          "yhat_upper": 3.64
+        },
+        {
+          "ds": "2026-05-22",
+          "yhat": 3.64,
+          "yhat_lower": 3.59,
+          "yhat_upper": 3.7
+        },
+        {
+          "ds": "2026-05-23",
+          "yhat": 3.7,
+          "yhat_lower": 3.65,
+          "yhat_upper": 3.75
+        },
+        {
+          "ds": "2026-05-24",
+          "yhat": 3.76,
+          "yhat_lower": 3.7,
+          "yhat_upper": 3.81
+        },
+        {
+          "ds": "2026-05-25",
+          "yhat": 3.81,
+          "yhat_lower": 3.76,
+          "yhat_upper": 3.87
+        },
+        {
+          "ds": "2026-05-26",
+          "yhat": 3.87,
+          "yhat_lower": 3.81,
+          "yhat_upper": 3.92
+        },
+        {
+          "ds": "2026-05-27",
+          "yhat": 3.92,
+          "yhat_lower": 3.87,
+          "yhat_upper": 3.98
+        },
+        {
+          "ds": "2026-05-28",
+          "yhat": 3.98,
+          "yhat_lower": 3.93,
+          "yhat_upper": 4.03
+        },
+        {
+          "ds": "2026-05-29",
+          "yhat": 4.04,
+          "yhat_lower": 3.98,
+          "yhat_upper": 4.09
+        }
+      ],
+      "metric": "engagement_rate",
+      "trend": "improving",
+      "anomalies": [],
+      "anomaly_count": 0,
+      "summary": "Engagement rate is improving. Current: 0.6900, predicted: 4.0400 in 60 days. 0 anomalies detected in historical data."
+    },
+    "timeseries_source": "synthetic_fallback"
+  },
+  "content_optimization": {
+    "title_optimization": {
+      "source_top_video_title": "Building a coding app",
+      "extracted_keywords": [
+        {
+          "phrase": "building",
+          "score": 1.0
+        },
+        {
+          "phrase": "coding",
+          "score": 0.5
+        },
+        {
+          "phrase": "app",
+          "score": 0.3333333333333333
+        },
+        {
+          "phrase": "react",
+          "score": 0.25
+        },
+        {
+          "phrase": "vue",
+          "score": 0.2
+        },
+        {
+          "phrase": "automation",
+          "score": 0.16666666666666666
+        },
+        {
+          "phrase": "creator",
+          "score": 0.14285714285714285
+        },
+        {
+          "phrase": "economy",
+          "score": 0.125
+        }
+      ],
+      "title_suggestions": [
+        "Building: complete guide (coding)",
+        "Why building matters in 2026 \u2014 coding explained",
+        "I tried building for 30 days \u2014 honest results",
+        "Building a coding app (Part 2 \u2014 deeper dive)"
+      ],
+      "keyword_phrases_for_seo": [
+        "building",
+        "coding",
+        "app",
+        "react",
+        "vue",
+        "automation",
+        "creator",
+        "economy"
+      ],
+      "llm_rationale": []
+    },
+    "seo": {
+      "suggested_tags": [
+        "building",
+        "coding",
+        "app",
+        "react",
+        "vue",
+        "automation",
+        "creator",
+        "economy",
+        "none",
+        "keyword",
+        "current",
+        "interest"
+      ],
+      "description_outline": "Hook: why this video matters for audiences interested in building.\nTimestamps: intro \u2192 core tutorial \u2192 examples \u2192 summary.\nCTA: subscribe for weekly building content.\nRelated searches: coding, app, react, vue, automation.",
+      "primary_keyword": "building",
+      "llm_seo": null
+    },
+    "thumbnail": {
+      "text_overlay": "BUILDING \u2014 bold sans-serif",
+      "color_palette": [
+        "#FF0000",
+        "#FFFFFF",
+        "#111111"
+      ],
+      "composition": "Face or product left third, high-contrast right third for text",
+      "contrast_rule": "WCAG-friendly: white text on dark bar or black text on yellow strip",
+      "safe_zone": "Keep key elements inside central 80% (mobile crop safe)",
+      "image_prompt_for_generator": "YouTube thumbnail, expressive face or product hero, bold text 'building', high saturation, shallow depth of field, 1280x720, no small text"
+    }
+  },
+  "content_calendar": {
+    "horizon_days": 30,
+    "start_date": "2026-03-23",
+    "best_posting_day": "Saturday",
+    "days": [
+      {
+        "day_index": 1,
+        "date": "2026-03-23",
+        "weekday": "Monday",
+        "content_type": "Long-form video",
+        "title_hint": "AI long-form video: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Research outline + primary keyword targets for: The ultimate guide to AI automation tools",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 2,
+        "date": "2026-03-24",
+        "weekday": "Tuesday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Short reel: 3 secrets about How to build AI Agents you didn't know",
+        "tasks": [
+          "Outline 45s beat sheet for: 3 secrets about How to build AI Agents you didn't know",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 3,
+        "date": "2026-03-25",
+        "weekday": "Wednesday",
+        "content_type": "Community post",
+        "title_hint": "Community post: Deep dive into your core channel niche",
+        "tasks": [
+          "Draft poll + discussion question around Deep dive into your core channel niche",
+          "Schedule post on community tab / Stories",
+          "Reply to top 10 comments in first hour"
+        ]
+      },
+      {
+        "day_index": 4,
+        "date": "2026-03-26",
+        "weekday": "Thursday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Short reel: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Outline 45s beat sheet for: The ultimate guide to AI automation tools",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 5,
+        "date": "2026-03-27",
+        "weekday": "Friday",
+        "content_type": "Long-form video",
+        "title_hint": "Deep tutorial: 3 secrets about How to build AI Agents you didn't know",
+        "tasks": [
+          "Research outline + primary keyword targets for: 3 secrets about How to build AI Agents you didn't know",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 6,
+        "date": "2026-03-28",
+        "weekday": "Saturday",
+        "content_type": "Long-form video",
+        "title_hint": "Behind the scenes: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Research outline + primary keyword targets for: The ultimate guide to AI automation tools",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 7,
+        "date": "2026-03-29",
+        "weekday": "Sunday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Trend reaction: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Outline 45s beat sheet for: The ultimate guide to AI automation tools",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 8,
+        "date": "2026-03-30",
+        "weekday": "Monday",
+        "content_type": "Long-form video",
+        "title_hint": "AI long-form video: 3 secrets about How to build AI Agents you didn't know",
+        "tasks": [
+          "Research outline + primary keyword targets for: 3 secrets about How to build AI Agents you didn't know",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 9,
+        "date": "2026-03-31",
+        "weekday": "Tuesday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Short reel: Deep dive into your core channel niche",
+        "tasks": [
+          "Outline 45s beat sheet for: Deep dive into your core channel niche",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 10,
+        "date": "2026-04-01",
+        "weekday": "Wednesday",
+        "content_type": "Community post",
+        "title_hint": "Community post: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Draft poll + discussion question around The ultimate guide to AI automation tools",
+          "Schedule post on community tab / Stories",
+          "Reply to top 10 comments in first hour"
+        ]
+      },
+      {
+        "day_index": 11,
+        "date": "2026-04-02",
+        "weekday": "Thursday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Short reel: 3 secrets about How to build AI Agents you didn't know",
+        "tasks": [
+          "Outline 45s beat sheet for: 3 secrets about How to build AI Agents you didn't know",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 12,
+        "date": "2026-04-03",
+        "weekday": "Friday",
+        "content_type": "Long-form video",
+        "title_hint": "Deep tutorial: Deep dive into your core channel niche",
+        "tasks": [
+          "Research outline + primary keyword targets for: Deep dive into your core channel niche",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 13,
+        "date": "2026-04-04",
+        "weekday": "Saturday",
+        "content_type": "Long-form video",
+        "title_hint": "Behind the scenes: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Research outline + primary keyword targets for: The ultimate guide to AI automation tools",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 14,
+        "date": "2026-04-05",
+        "weekday": "Sunday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Trend reaction: 3 secrets about How to build AI Agents you didn't know",
+        "tasks": [
+          "Outline 45s beat sheet for: 3 secrets about How to build AI Agents you didn't know",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 15,
+        "date": "2026-04-06",
+        "weekday": "Monday",
+        "content_type": "Long-form video",
+        "title_hint": "AI long-form video: Deep dive into your core channel niche",
+        "tasks": [
+          "Research outline + primary keyword targets for: Deep dive into your core channel niche",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 16,
+        "date": "2026-04-07",
+        "weekday": "Tuesday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Short reel: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Outline 45s beat sheet for: The ultimate guide to AI automation tools",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 17,
+        "date": "2026-04-08",
+        "weekday": "Wednesday",
+        "content_type": "Community post",
+        "title_hint": "Community post: 3 secrets about How to build AI Agents you didn't know",
+        "tasks": [
+          "Draft poll + discussion question around 3 secrets about How to build AI Agents you didn't know",
+          "Schedule post on community tab / Stories",
+          "Reply to top 10 comments in first hour"
+        ]
+      },
+      {
+        "day_index": 18,
+        "date": "2026-04-09",
+        "weekday": "Thursday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Short reel: Deep dive into your core channel niche",
+        "tasks": [
+          "Outline 45s beat sheet for: Deep dive into your core channel niche",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 19,
+        "date": "2026-04-10",
+        "weekday": "Friday",
+        "content_type": "Long-form video",
+        "title_hint": "Deep tutorial: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Research outline + primary keyword targets for: The ultimate guide to AI automation tools",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 20,
+        "date": "2026-04-11",
+        "weekday": "Saturday",
+        "content_type": "Long-form video",
+        "title_hint": "Behind the scenes: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Research outline + primary keyword targets for: The ultimate guide to AI automation tools",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 21,
+        "date": "2026-04-12",
+        "weekday": "Sunday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Trend reaction: Deep dive into your core channel niche",
+        "tasks": [
+          "Outline 45s beat sheet for: Deep dive into your core channel niche",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 22,
+        "date": "2026-04-13",
+        "weekday": "Monday",
+        "content_type": "Long-form video",
+        "title_hint": "AI long-form video: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Research outline + primary keyword targets for: The ultimate guide to AI automation tools",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 23,
+        "date": "2026-04-14",
+        "weekday": "Tuesday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Short reel: 3 secrets about How to build AI Agents you didn't know",
+        "tasks": [
+          "Outline 45s beat sheet for: 3 secrets about How to build AI Agents you didn't know",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 24,
+        "date": "2026-04-15",
+        "weekday": "Wednesday",
+        "content_type": "Community post",
+        "title_hint": "Community post: Deep dive into your core channel niche",
+        "tasks": [
+          "Draft poll + discussion question around Deep dive into your core channel niche",
+          "Schedule post on community tab / Stories",
+          "Reply to top 10 comments in first hour"
+        ]
+      },
+      {
+        "day_index": 25,
+        "date": "2026-04-16",
+        "weekday": "Thursday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Short reel: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Outline 45s beat sheet for: The ultimate guide to AI automation tools",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 26,
+        "date": "2026-04-17",
+        "weekday": "Friday",
+        "content_type": "Long-form video",
+        "title_hint": "Deep tutorial: 3 secrets about How to build AI Agents you didn't know",
+        "tasks": [
+          "Research outline + primary keyword targets for: 3 secrets about How to build AI Agents you didn't know",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 27,
+        "date": "2026-04-18",
+        "weekday": "Saturday",
+        "content_type": "Long-form video",
+        "title_hint": "Behind the scenes: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Research outline + primary keyword targets for: The ultimate guide to AI automation tools",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 28,
+        "date": "2026-04-19",
+        "weekday": "Sunday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Trend reaction: The ultimate guide to AI automation tools",
+        "tasks": [
+          "Outline 45s beat sheet for: The ultimate guide to AI automation tools",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      },
+      {
+        "day_index": 29,
+        "date": "2026-04-20",
+        "weekday": "Monday",
+        "content_type": "Long-form video",
+        "title_hint": "AI long-form video: 3 secrets about How to build AI Agents you didn't know",
+        "tasks": [
+          "Research outline + primary keyword targets for: 3 secrets about How to build AI Agents you didn't know",
+          "Script intro hook (first 30s) + pattern interrupts",
+          "Film A-roll, collect B-roll, record voiceover",
+          "Edit, color grade, mix audio, add chapters",
+          "Upload, set end screens, publish + first-hour analytics check"
+        ]
+      },
+      {
+        "day_index": 30,
+        "date": "2026-04-21",
+        "weekday": "Tuesday",
+        "content_type": "Short / Shorts",
+        "title_hint": "Short reel: Deep dive into your core channel niche",
+        "tasks": [
+          "Outline 45s beat sheet for: Deep dive into your core channel niche",
+          "Film vertical 9:16, captions burned in",
+          "Export 3 hook variants (first 2s)",
+          "Post + pin comment with CTA"
+        ]
+      }
+    ],
+    "milestones": [
+      {
+        "week": 1,
+        "milestone_title": "Week 1: baseline analytics + publish flagship on The ultimate guide to AI automation tool",
+        "success_metric": "Watch-time hours + new subs vs prior week"
+      },
+      {
+        "week": 2,
+        "milestone_title": "Week 2: ship 2 core pieces; double down on The ultimate guide to AI automation tools",
+        "success_metric": "Watch-time hours + new subs vs prior week"
+      },
+      {
+        "week": 3,
+        "milestone_title": "Week 3: ship 1 core pieces; double down on The ultimate guide to AI automation tools",
+        "success_metric": "Watch-time hours + new subs vs prior week"
+      },
+      {
+        "week": 4,
+        "milestone_title": "Week 4: ship 1 core pieces; double down on The ultimate guide to AI automation tools",
+        "success_metric": "Watch-time hours + new subs vs prior week"
+      },
+      {
+        "week": 5,
+        "milestone_title": "Week 5: retrospective + plan next 30 days from learnings",
+        "success_metric": "Watch-time hours + new subs vs prior week",
+        "forecast_context": "Current: 10.0k subscribers. Predicted: 10.0k in 60 days (+0.0%). 25.0k milestone not reached within 60-day window."
+      }
+    ]
+  }
+}
