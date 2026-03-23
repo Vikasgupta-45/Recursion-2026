@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+pandas
+scikit-learn
+numpy
+google-api-python-client
+pytrends
+requests
+python-dotenv
+yt-dlp
+openai
+prophet
+statsmodels
+tensorflow
+scipy
