@@ -1,3 +1,5 @@
+from datetime import datetime, timezone
+
 import yt_dlp
 
 def fetch_channel_content_ytdlp(channel_url: str, max_videos: int = 5) -> dict:
@@ -44,3 +46,53 @@ def fetch_channel_content_ytdlp(channel_url: str, max_videos: int = 5) -> dict:
             }
     except Exception as e:
         return {"error": f"yt-dlp failed: {str(e)}"}
+
+
+def fetch_channel_videos_detailed(channel_url: str, max_videos: int = 50) -> list[dict]:
+    """
+    Non-flat extraction: real upload dates, views, duration per video (no API key).
+    Slower than fetch_channel_content_ytdlp but needed for time-series when API is unavailable.
+    """
+    if not channel_url.startswith("http"):
+        if channel_url.startswith("@") or channel_url.startswith("UC"):
+            channel_url = f"https://www.youtube.com/{channel_url}"
+        else:
+            channel_url = f"https://www.youtube.com/@{channel_url}"
+
+    ydl_opts = {
+        "quiet": True,
+        "extract_flat": False,
+        "playlistend": max_videos,
+        "ignoreerrors": True,
+        "skip_download": True,
+    }
+    out: list[dict] = []
+    try:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            info = ydl.extract_info(channel_url, download=False)
+            entries = info.get("entries") or [info]
+            for video in entries:
+                if not video or not isinstance(video, dict):
+                    continue
+                ts = video.get("timestamp") or video.get("release_timestamp")
+                upload_date = video.get("upload_date")
+                if upload_date and len(str(upload_date)) == 8:
+                    ds = f"{upload_date[:4]}-{upload_date[4:6]}-{upload_date[6:8]}"
+                elif ts:
+                    ds = datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
+                else:
+                    continue
+                out.append(
+                    {
+                        "date": ds,
+                        "views": int(video.get("view_count") or 0),
+                        "likes": int(video.get("like_count") or 0),
+                        "comments": int(video.get("comment_count") or 0),
+                        "title": video.get("title") or "",
+                        "video_id": video.get("id") or video.get("url"),
+                    }
+                )
+        out.sort(key=lambda x: x["date"])
+        return out
+    except Exception:
+        return []

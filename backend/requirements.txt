@@ -14,3 +14,4 @@ prophet
 statsmodels
 tensorflow
 scipy
+yake

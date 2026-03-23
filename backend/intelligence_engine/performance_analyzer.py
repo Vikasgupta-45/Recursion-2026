@@ -11,15 +11,17 @@ def analyze_performance_drivers(video_data: list) -> dict:
     # Standardize our features 
     if 'duration_seconds' not in df.columns:
         df['duration_seconds'] = np.random.randint(60, 1200, size=len(df))
+    else:
+        df['duration_seconds'] = df['duration_seconds'].fillna(600).astype(int)
     
     if 'title' in df.columns:
-        df['title_length'] = df['title'].apply(len)
+        df['title_length'] = df['title'].fillna("").apply(len)
     else:
         df['title_length'] = 50 
         
     features = ['duration_seconds', 'title_length']
     X = df[features]
-    y = df['views']
+    y = df['views'].fillna(0)
     
     # Train the Random Forest Regression model
     rf = RandomForestRegressor(n_estimators=25, random_state=42)
@@ -29,9 +31,13 @@ def analyze_performance_drivers(video_data: list) -> dict:
     importance = dict(zip(features, [round(float(val), 2) for val in rf.feature_importances_]))
     
     # Find the best posting day (Mocked if dates are missing to prevent hackathon crashes)
-    if 'published_at' in df.columns:
-        df['day'] = pd.to_datetime(df['published_at']).dt.day_name()
-        best_day = df.groupby('day')['views'].mean().idxmax()
+    if 'published_at' in df.columns and not df['published_at'].isna().all():
+        df['day'] = pd.to_datetime(df['published_at'], errors='coerce').dt.day_name()
+        try:
+            best_day = df.groupby('day', observed=False)['views'].mean().idxmax()
+        except:
+            best_day = "Saturday"
+
     else:
         best_day = "Saturday" # Mapped from dummy requirement
         

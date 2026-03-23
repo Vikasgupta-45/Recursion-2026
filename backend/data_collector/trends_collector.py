@@ -14,12 +14,12 @@ def fetch_trends_for_topic(keyword: str) -> dict:
         df = df.drop(columns=['isPartial'])
         
         # Format the last 30 days as a timeseries
-        recent_trends = df.tail(30).to_dict()['interest']
+        recent_trends = df.tail(30).to_dict()[keyword]
         
         return {
             "keyword": keyword,
             "trend_data": recent_trends,
-            "current_score": df['interest'].iloc[-1]
+            "current_score": df[keyword].iloc[-1]
         }
     except Exception as e:
          return {"error": str(e)}

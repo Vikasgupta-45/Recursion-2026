@@ -10,7 +10,7 @@ def clean_timeseries_data(raw_data: list) -> pd.DataFrame:
     
     # Fill missing zeroes with previous day's metrics (FFill)
     df = df.replace(0, np.nan)
-    df = df.fillna(method='ffill').fillna(0)
+    df = df.ffill().fillna(0)
     return df
 
 def extract_features(df: pd.DataFrame) -> dict:

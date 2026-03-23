@@ -9,12 +9,16 @@ def get_content_insights(videos: List[Dict]) -> dict:
         
     df['duration_min'] = df['duration_seconds'] / 60
     
-    bins = [0, 3, 8, 12, 20, 100]
+    bins = [0, 3, 8, 12, 20, 1000]
     labels = ["<3 min", "3-8 min", "8-12 min", "12-20 min", "20+ min"]
     df['duration_category'] = pd.cut(df['duration_min'], bins=bins, labels=labels)
     
     # E.g. Best duration: 8-12 min
-    best_duration = df.groupby('duration_category')['views'].mean().idxmax()
+    try:
+        grouped = df.groupby('duration_category', observed=False)['views'].mean()
+        best_duration = grouped.idxmax() if not grouped.isna().all() else "Unknown"
+    except Exception:
+        best_duration = "Unknown"
     
     return {
         "best_duration": str(best_duration),
