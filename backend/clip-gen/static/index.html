@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Viking Clip Generator - AI-powered viral clip extraction from YouTube videos using Groq AI.">
+    <title>Viking Clip Generator ⚡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- ── Animated Background ──────────────────────────────────── -->
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+
+    <!-- ── Main Container ───────────────────────────────────────── -->
+    <div class="container">
+
+        <!-- ── Header ───────────────────────────────────────────── -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">
+                    <h1>Viking Clip Generator</h1>
+                    <p class="tagline">AI-Powered Viral Clip Extraction</p>
+                </div>
+            </div>
+            <div class="header-badge">
+                <span class="badge-dot"></span>
+                Powered by Groq
+            </div>
+        </header>
+
+        <!-- ── Input Section ────────────────────────────────────── -->
+        <section class="input-section" id="input-section">
+            <div class="glass-card input-card">
+                <div class="card-glow"></div>
+                <h2 class="section-title">
+                    <span class="title-icon">🎬</span>
+                    Enter YouTube URL
+                </h2>
+                <p class="section-desc">Paste a YouTube video link and our AI will find the most viral moments.</p>
+                <form id="generate-form" class="input-form">
+                    <div class="input-wrapper">
+                        <input 
+                            type="url" 
+                            id="url-input"
+                            placeholder="https://www.youtube.com/watch?v=..." 
+                            required
+                            autocomplete="off"
+                        >
+                        <div class="input-border"></div>
+                    </div>
+                    <button type="submit" id="generate-btn" class="btn-generate">
+                        <span class="btn-text">Generate Clips</span>
+                        <span class="btn-icon">⚡</span>
+                        <div class="btn-shimmer"></div>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ── Pipeline Status ──────────────────────────────────── -->
+        <section class="pipeline-section hidden" id="pipeline-section">
+            <div class="glass-card pipeline-card">
+                <div class="card-glow"></div>
+                <h2 class="section-title">
+                    <span class="title-icon">⚙️</span>
+                    Processing Pipeline
+                </h2>
+                <div class="pipeline" id="pipeline">
+                    <div class="pipeline-step" data-stage="downloading" id="step-downloading">
+                        <div class="step-indicator">
+                            <div class="step-ring"></div>
+                            <div class="step-dot"></div>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-label">Downloading</span>
+                            <span class="step-desc">Fetching video from YouTube</span>
+                        </div>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step" data-stage="extracting" id="step-extracting">
+                        <div class="step-indicator">
+                            <div class="step-ring"></div>
+                            <div class="step-dot"></div>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-label">Extracting</span>
+                            <span class="step-desc">Pulling audio track</span>
+                        </div>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step" data-stage="transcribing" id="step-transcribing">
+                        <div class="step-indicator">
+                            <div class="step-ring"></div>
+                            <div class="step-dot"></div>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-label">Transcribing</span>
+                            <span class="step-desc">AI speech-to-text</span>
+                        </div>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step" data-stage="scoring" id="step-scoring">
+                        <div class="step-indicator">
+                            <div class="step-ring"></div>
+                            <div class="step-dot"></div>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-label">Scoring</span>
+                            <span class="step-desc">Finding viral moments</span>
+                        </div>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step" data-stage="clipping" id="step-clipping">
+                        <div class="step-indicator">
+                            <div class="step-ring"></div>
+                            <div class="step-dot"></div>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-label">Clipping</span>
+                            <span class="step-desc">Cutting viral segments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pipeline-message" id="pipeline-message">Initializing...</div>
+            </div>
+        </section>
+
+        <!-- ── Error Section ────────────────────────────────────── -->
+        <section class="error-section hidden" id="error-section">
+            <div class="glass-card error-card">
+                <div class="error-icon">❌</div>
+                <h3>Something went wrong</h3>
+                <p id="error-message"></p>
+                <button class="btn-retry" id="retry-btn">Try Again</button>
+            </div>
+        </section>
+
+        <!-- ── Results Section ──────────────────────────────────── -->
+        <section class="results-section hidden" id="results-section">
+            <div class="results-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🔥</span>
+                    <span id="results-title">Your Viral Clips</span>
+                </h2>
+                <p class="results-subtitle" id="results-subtitle"></p>
+            </div>
+            <div class="clips-grid" id="clips-grid">
+                <!-- Clip cards dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- ── Footer ───────────────────────────────────────────── -->
+        <footer class="footer">
+            <p>Built with ⚡ FastAPI &bull; Groq AI &bull; FFmpeg</p>
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

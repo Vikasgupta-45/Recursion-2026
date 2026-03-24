@@ -1,0 +1,75 @@
+Here is a highly detailed prompt you can copy and paste into AI UI generators like v0, Cursor, GitHub Copilot, or Lovable to build your application:
+
+--- COPY EVERYTHING BELOW THIS LINE ---
+
+Act as an expert Frontend Developer and UX/UI Designer. I want you to build a full web application for "Project Growth Engine," an AI-powered YouTube channel analytics and strategy platform. 
+
+Tech Stack: 
+- Framework: Next.js (App Router) with React
+- Styling: Tailwind CSS
+- Components: shadcn/ui and Radix UI primitives
+- Icons: Lucide React
+- Charts: Recharts (for data visualization)
+- Animations: Framer Motion (for smooth transitions and loading states)
+
+Design Language:
+- Theme: Deep dark mode (e.g., bg-slate-950) with vibrant neon accents (purple, electric blue, and emerald green) to signify AI intelligence and growth.
+- Style: Sleek, premium, glassmorphic elements (`backdrop-blur-md`, subtle borders, translucent cards).
+- Animations: Micro-interactions on buttons, hover details on charts, and smooth layout transitions between tabs.
+
+Application Structure:
+
+There are two main distinct states in this application: the Landing Page (pre-analysis) and the Dashboard (post-analysis).
+
+---
+STATE 1: THE LANDING PAGE
+---
+This is the entry point. It should feel premium and conversion-focused.
+- Hero Section: 
+  - A bold, glowing central headline: "Unleash Your Channel's Potential with AI"
+  - A soft subtitle: "Paste your YouTube URL below to let our Agentic Strategy Engine analyze, forecast, and generate a 30-day growth plan."
+- Input Area:
+  - A large, prominent, rounded text input field for the user to paste their YouTube URL.
+  - A primary call-to-action (CTA) button labeled "Analyze My Channel" with a subtle glow or pulse effect.
+- Loading State: 
+  - When the user clicks the CTA, transition into a beautiful loading screen showing step-by-step progress. 
+  - Fake the loading steps: "Validating Channel URL...", "Locating Data via API...", "Cleaning Timeseries Data...", "Running Agentic Strategy Engine...", "Forecasting Growth...".
+
+---
+STATE 2: THE DASHBOARD SHELL
+---
+Once the loading is complete, reveal the dashboard shell. It should have a top navigation or a sticky left sidebar allowing the user to switch between 5 distinct pages/tabs.
+
+Tab 1: Main Dashboard (Overview)
+- A greeting summarizing the channel name (e.g., "Welcome back, {Channel Name}").
+- 4 Top-level KPI cards: "Total Subscribers", "Total Views", "Total Videos", and "30-Day Avg Engagement". Include small up/down trend arrows (e.g., "+5%").
+- A "Growth Snapshot" section summarizing momentum.
+- A "Niche Trend" card showing a gauge or line chart of the current Google Trends score for the channel's niche.
+- A horizontal scroll or grid of "Recent Analyzed Videos" showing thumbnails (use placeholders), views, and duration.
+
+Tab 2: Intelligence & Performance
+- Display a "Performance Drivers" section. Use bar or pie charts from Recharts to visualize the best posting days and optimal video duration.
+- Include a "Content Insights" text analysis panel that highlights what titles/thumbnails perform best based on historical data.
+- A large area chart plotting historical views, likes, and comments over the last 90 days.
+
+Tab 3: Opportunities & AI Strategy
+- A "Detected Content Gaps" table contrasting the channel's recent topics vs macro market trends.
+- A prominent "AI Strategic Roadmap" section. Display a visually appealing task list or roadmap UI detailing the weekly strategy (e.g., Ratio of Shorts vs Long-form, and specific angle/topic recommendations to capture market gaps).
+
+Tab 4: Predictions & Forecasting
+- A "Forecast Source" badge stating if data is from "YouTube Data API v3" or "yt-dlp Analytics".
+- Display 3 distinct, beautiful predictive charts (Line charts mapping current data + dotted lines for the 60-day prediction into the future):
+   1. Views Forecast
+   2. Subscriber Forecast
+   3. Engagement Rate Forecast
+
+Tab 5: Content Planner
+- Display an "SEO Optimization" card offering the best tags and keywords for the channel's niche based on YAKE extraction.
+- A "30-Day Content Calendar" component. Render a beautiful grid calendar (like a standard month view) with specific video ideas (Title/Format) plotted onto specific dates (specifically highlighting the "best posting days").
+
+Functionality Requirements:
+- Use dummy data for the dashboard that maps perfectly to this structure. Let the UI assume the API returns a complex JSON payload containing `channel_metrics`, `content_metrics`, `intelligence_insights`, `opportunities`, `ai_strategy`, `predictions`, and `content_calendar`.
+- Ensure all charts are responsive and show tooltips on hover.
+- Make the transition between the 5 tabs instantaneous without full page reloads.
+
+Please generate the complete, production-ready code for this application.
