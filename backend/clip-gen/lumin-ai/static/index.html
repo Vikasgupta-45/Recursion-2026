@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumin AI — Chatbot Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-layout">
+
+        <!-- ── Left Panel: Node Palette + Bot List ────────────── -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="brand">
+                    <span class="brand-icon">✦</span>
+                    <span class="brand-name">Lumin AI</span>
+                </div>
+            </div>
+
+            <!-- Bot selector -->
+            <div class="bot-selector">
+                <div class="bot-selector-header">
+                    <span class="section-label">MY CHATBOTS</span>
+                    <button class="btn-icon" id="btn-new-bot" title="New Chatbot">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                </div>
+                <div class="bot-list" id="bot-list">
+                    <!-- dynamically filled -->
+                </div>
+            </div>
+
+            <!-- Node palette -->
+            <div class="node-palette">
+                <span class="section-label">DRAG NODES</span>
+                <div class="palette-nodes">
+                    <div class="palette-node" draggable="true" data-type="message">
+                        <span class="pn-icon">💬</span>
+                        <div class="pn-info">
+                            <span class="pn-name">Message</span>
+                            <span class="pn-desc">Send a text message</span>
+                        </div>
+                    </div>
+                    <div class="palette-node" draggable="true" data-type="ai_response">
+                        <span class="pn-icon">🤖</span>
+                        <div class="pn-info">
+                            <span class="pn-name">AI Response</span>
+                            <span class="pn-desc">Groq-powered reply</span>
+                        </div>
+                    </div>
+                    <div class="palette-node" draggable="true" data-type="knowledge">
+                        <span class="pn-icon">📚</span>
+                        <div class="pn-info">
+                            <span class="pn-name">Knowledge Base</span>
+                            <span class="pn-desc">Add data for AI context</span>
+                        </div>
+                    </div>
+                    <div class="palette-node" draggable="true" data-type="user_input">
+                        <span class="pn-icon">⌨️</span>
+                        <div class="pn-info">
+                            <span class="pn-name">User Input</span>
+                            <span class="pn-desc">Wait for user message</span>
+                        </div>
+                    </div>
+                    <div class="palette-node" draggable="true" data-type="condition">
+                        <span class="pn-icon">🔀</span>
+                        <div class="pn-info">
+                            <span class="pn-name">Condition</span>
+                            <span class="pn-desc">Branch on keywords</span>
+                        </div>
+                    </div>
+                    <div class="palette-node" draggable="true" data-type="end">
+                        <span class="pn-icon">🏁</span>
+                        <div class="pn-info">
+                            <span class="pn-name">End</span>
+                            <span class="pn-desc">End conversation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <span class="powered-dot"></span>
+                Powered by Groq
+            </div>
+        </aside>
+
+        <!-- ── Canvas Area ────────────────────────────────────── -->
+        <main class="canvas-area">
+            <!-- Top bar -->
+            <div class="topbar">
+                <div class="topbar-left">
+                    <input type="text" class="bot-name-input" id="bot-name-input" value="My Chatbot" placeholder="Bot name...">
+                </div>
+                <div class="topbar-actions">
+                    <button class="btn-action btn-save" id="btn-save" title="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                        Save
+                    </button>
+                    <button class="btn-action btn-preview" id="btn-preview" title="Preview">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        Preview
+                    </button>
+                    <button class="btn-action btn-delete-bot" id="btn-delete-bot" title="Delete Bot">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Flow Canvas -->
+            <div class="canvas-container" id="canvas-container">
+                <svg class="connections-svg" id="connections-svg"></svg>
+                <div class="canvas" id="canvas">
+                    <!-- Nodes rendered here -->
+                </div>
+                <!-- Empty state -->
+                <div class="canvas-empty" id="canvas-empty">
+                    <div class="ce-icon">✦</div>
+                    <h2>Start Building Your Chatbot</h2>
+                    <p>Drag nodes from the left panel onto this canvas to design your chatbot flow.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- ── Right Panel: Node Properties ───────────────────── -->
+        <aside class="properties-panel hidden" id="properties-panel">
+            <div class="props-header">
+                <h3 id="props-title">Node Properties</h3>
+                <button class="btn-icon" id="btn-close-props">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="props-body" id="props-body">
+                <!-- Dynamic property fields -->
+            </div>
+            <div class="props-footer">
+                <button class="btn-delete-node" id="btn-delete-node">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+                    Delete Node
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ── Chat Preview Modal ─────────────────────────────────── -->
+    <div class="preview-overlay hidden" id="preview-overlay">
+        <div class="preview-widget">
+            <div class="pw-header">
+                <div class="pw-brand">✦ Chatbot Preview</div>
+                <button class="btn-icon pw-close" id="btn-close-preview">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="pw-messages" id="pw-messages"></div>
+            <div class="pw-input-area" id="pw-input-area">
+                <input type="text" id="pw-input" placeholder="Type a message..." />
+                <button class="pw-send" id="pw-send">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </div>
+            <button class="pw-restart" id="pw-restart">↻ Restart</button>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
